@@ -4,7 +4,7 @@ Welcome to your new gem! In this directory, you'll find the files you need to be
 
 TODO: Delete this and the text above, and describe your gem
 
-## Installation
+## Usages
 
 Add this line to your application's Gemfile:
 
@@ -12,13 +12,13 @@ Add this line to your application's Gemfile:
 gem 'printful_sdk'
 ```
 
-And then execute:
+Config the SDK with secret key
 
-    $ bundle install
-
-Or install it yourself as:
-
-    $ gem install printful_sdk
+```ruby
+PrintfulSdk.configure do |config|
+  config.api_key = ENV['PRINTFUL_API_KEY']
+end
+```
 
 ## Usage
 
