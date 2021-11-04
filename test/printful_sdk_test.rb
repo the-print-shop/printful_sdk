@@ -3,11 +3,12 @@
 require "test_helper"
 
 class PrintfulSdkTest < Minitest::Test
-  def test_that_it_has_a_version_number
-    refute_nil ::PrintfulSdk::VERSION
+  def test_configuration
+    assert PrintfulSdk.configuration.api_key
+    assert PrintfulSdk.configuration.endpoint
   end
 
-  def test_it_does_something_useful
-    assert false
+  def test_version
+    refute_nil PrintfulSdk::VERSION
   end
 end
