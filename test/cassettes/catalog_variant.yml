@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.printful.com/products/variant/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Basic <API_KEY>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 06 Nov 2021 13:28:40 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '120'
+      X-Ratelimit-Remaining:
+      - '119'
+      X-Ratelimit-Reset:
+      - '60'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Set-Cookie:
+      - __cf_bm=LR1ihFQVXy8lyACdTI4bmnRGX9mdEH.kHJ8nwhMuPHk-1636205320-0-AWJBuYLRpup8TZj+Xn8mvCrcur3ws2sTaqvihac9ioX2S79gf4f6cVjQl/jqdFggOxBO2PqIAui/jZRQ/INNqHc=;
+        path=/; expires=Sat, 06-Nov-21 13:58:40 GMT; domain=.printful.com; HttpOnly;
+        Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6a9eaa925a6f206b-NRT
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"code":200,"result":{"variant":{"id":1,"product_id":1,"name":"Enhanced
+        Matte Paper Poster 18″×24″","size":"18″×24″","color":null,"color_code":null,"color_code2":null,"image":"https://files.cdn.printful.com/products/1/1_1527683474.jpg","price":"13.00","in_stock":true,"availability_regions":{"US":"United
+        States","EU":"Europe","EU_LV":"Latvia","EU_ES":"Spain","AU":"Australia","CA":"Canada"},"availability_status":[{"region":"US","status":"in_stock"},{"region":"EU","status":"in_stock"},{"region":"EU_LV","status":"in_stock"},{"region":"EU_ES","status":"in_stock"},{"region":"AU","status":"in_stock"},{"region":"CA","status":"in_stock"}]},"product":{"id":1,"type":"POSTER","type_name":"Enhanced
+        Matte Paper Poster (in)","title":"Enhanced Matte Paper Poster (in)","brand":null,"model":"Enhanced
+        Matte Paper Poster (in)","image":"https://files.cdn.printful.com/o/products/1/product_1613463122.jpg","variant_count":11,"currency":"USD","files":[{"id":"default","type":"default","title":"Print
+        file","additional_price":null},{"id":"preview","type":"mockup","title":"Mockup","additional_price":null}],"options":[],"dimensions":{"8×10":"8×10","10x10":"10x10","12×12":"12×12","12×16":"12×16","12×18":"12×18","14×14":"14×14","16×16":"16×16","16×20":"16×20","18×18":"18×18","18×24":"18×24","24×36":"24×36"},"is_discontinued":false,"avg_fulfillment_time":null,"description":"Museum-quality
+        posters made on thick and durable matte paper. Add a wonderful accent to your
+        room and office with these posters that are sure to brighten any environment.\r\n\r\n•
+        Paper thickness: 10.3 mil\r\n• Paper weight: 5.57 oz/y² (189 g/m²)\r\n• Giclée
+        printing quality\r\n• Opacity: 94%\r\n• ISO brightness: 104%"}},"extra":[]}'
+  recorded_at: Sat, 06 Nov 2021 13:28:40 GMT
+recorded_with: VCR 6.0.0
