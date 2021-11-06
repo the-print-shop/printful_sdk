@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.printful.com/store
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Basic <API_KEY>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 06 Nov 2021 14:04:55 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '120'
+      X-Ratelimit-Remaining:
+      - '119'
+      X-Ratelimit-Reset:
+      - '60'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Set-Cookie:
+      - __cf_bm=kotBjJTUdXXGu8Ldaoy4FdeNjknimDIV4JfNvM8FmYg-1636207495-0-ATaqy9Zr7l3gpkAOBlOm9rTb0aUpxf7+HERLTmEkbOopzjGNzcwhqOm5LOZxaOplTX1IY5FyhxEyzY3tVTwz6hY=;
+        path=/; expires=Sat, 06-Nov-21 14:34:55 GMT; domain=.printful.com; HttpOnly;
+        Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6a9edfacbbf33517-NRT
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"code":200,"result":{"id":5334979,"name":"Dev pocket","type":"shopify","website":"http://dev-pocket.myshopify.com/","return_address":null,"billing_address":null,"currency":"USD","payment_card":null,"packing_slip":{"email":null,"phone":null,"message":null},"created":1602514040},"extra":[]}'
+  recorded_at: Sat, 06 Nov 2021 14:04:55 GMT
+recorded_with: VCR 6.0.0
