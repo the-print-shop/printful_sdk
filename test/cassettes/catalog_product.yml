@@ -1,0 +1,91 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.printful.com/products/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Basic <API_KEY>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 06 Nov 2021 03:55:57 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '120'
+      X-Ratelimit-Remaining:
+      - '119'
+      X-Ratelimit-Reset:
+      - '60'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Set-Cookie:
+      - __cf_bm=KQk4kyca9_iI4XuUY.jr80ZgMiLs7i1Aws1cz.rBMdY-1636170957-0-AZzUcctTY7igWbmlAdE3JFPsq/EC03kJcZddz7aJUv9k2YFVLrKm3VZaPK8WdoO/hAoTyM5/5aRAaqQ5heip/hY=;
+        path=/; expires=Sat, 06-Nov-21 04:25:57 GMT; domain=.printful.com; HttpOnly;
+        Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6a9b63a15ea520c5-NRT
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"code":200,"result":{"product":{"id":1,"type":"POSTER","type_name":"Enhanced
+        Matte Paper Poster (in)","title":"Enhanced Matte Paper Poster (in)","brand":null,"model":"Enhanced
+        Matte Paper Poster (in)","image":"https://files.cdn.printful.com/o/products/1/product_1613463122.jpg","variant_count":11,"currency":"USD","files":[{"id":"default","type":"default","title":"Print
+        file","additional_price":null},{"id":"preview","type":"mockup","title":"Mockup","additional_price":null}],"options":[],"dimensions":{"8×10":"8×10","10x10":"10x10","12×12":"12×12","12×16":"12×16","12×18":"12×18","14×14":"14×14","16×16":"16×16","16×20":"16×20","18×18":"18×18","18×24":"18×24","24×36":"24×36"},"is_discontinued":false,"avg_fulfillment_time":null,"description":"Museum-quality
+        posters made on thick and durable matte paper. Add a wonderful accent to your
+        room and office with these posters that are sure to brighten any environment.\r\n\r\n•
+        Paper thickness: 10.3 mil\r\n• Paper weight: 5.57 oz/y² (189 g/m²)\r\n• Giclée
+        printing quality\r\n• Opacity: 94%\r\n• ISO brightness: 104%"},"variants":[{"id":6239,"product_id":1,"name":"Enhanced
+        Matte Paper Poster 10″×10″","size":"10″×10″","color":null,"color_code":null,"color_code2":null,"image":"https://files.cdn.printful.com/products/1/6239_1527678729.jpg","price":"8.00","in_stock":true,"availability_regions":{"US":"United
+        States","EU":"Europe","EU_LV":"Latvia","EU_ES":"Spain","AU":"Australia","CA":"Canada"},"availability_status":[{"region":"US","status":"in_stock"},{"region":"EU","status":"in_stock"},{"region":"EU_LV","status":"in_stock"},{"region":"EU_ES","status":"in_stock"},{"region":"AU","status":"in_stock"},{"region":"CA","status":"in_stock"}]},{"id":4464,"product_id":1,"name":"Enhanced
+        Matte Paper Poster 12″×12″","size":"12″×12″","color":null,"color_code":null,"color_code2":null,"image":"https://files.cdn.printful.com/products/1/4464_1527678770.jpg","price":"9.00","in_stock":true,"availability_regions":{"US":"United
+        States","EU":"Europe","EU_LV":"Latvia","EU_ES":"Spain","AU":"Australia","CA":"Canada"},"availability_status":[{"region":"US","status":"in_stock"},{"region":"EU","status":"in_stock"},{"region":"EU_LV","status":"in_stock"},{"region":"EU_ES","status":"in_stock"},{"region":"AU","status":"in_stock"},{"region":"CA","status":"in_stock"}]},{"id":1349,"product_id":1,"name":"Enhanced
+        Matte Paper Poster 12″×16″","size":"12″×16″","color":null,"color_code":null,"color_code2":null,"image":"https://files.cdn.printful.com/products/1/1349_1527679043.jpg","price":"11.00","in_stock":true,"availability_regions":{"US":"United
+        States","EU":"Europe","EU_LV":"Latvia","EU_ES":"Spain","AU":"Australia","CA":"Canada"},"availability_status":[{"region":"US","status":"in_stock"},{"region":"EU","status":"in_stock"},{"region":"EU_LV","status":"in_stock"},{"region":"EU_ES","status":"in_stock"},{"region":"AU","status":"in_stock"},{"region":"CA","status":"in_stock"}]},{"id":3876,"product_id":1,"name":"Enhanced
+        Matte Paper Poster 12″×18″","size":"12″×18″","color":null,"color_code":null,"color_code2":null,"image":"https://files.cdn.printful.com/products/1/3876_1527678813.jpg","price":"11.50","in_stock":true,"availability_regions":{"US":"United
+        States","EU":"Europe","EU_LV":"Latvia","EU_ES":"Spain","AU":"Australia","CA":"Canada"},"availability_status":[{"region":"US","status":"in_stock"},{"region":"EU","status":"in_stock"},{"region":"EU_LV","status":"in_stock"},{"region":"EU_ES","status":"in_stock"},{"region":"AU","status":"in_stock"},{"region":"CA","status":"in_stock"}]},{"id":6240,"product_id":1,"name":"Enhanced
+        Matte Paper Poster 14″×14″","size":"14″×14″","color":null,"color_code":null,"color_code2":null,"image":"https://files.cdn.printful.com/products/1/6240_1527678837.jpg","price":"10.00","in_stock":true,"availability_regions":{"US":"United
+        States","EU":"Europe","EU_LV":"Latvia","EU_ES":"Spain","AU":"Australia","CA":"Canada"},"availability_status":[{"region":"US","status":"in_stock"},{"region":"EU","status":"in_stock"},{"region":"EU_LV","status":"in_stock"},{"region":"EU_ES","status":"in_stock"},{"region":"AU","status":"in_stock"},{"region":"CA","status":"in_stock"}]},{"id":4465,"product_id":1,"name":"Enhanced
+        Matte Paper Poster 16″×16″","size":"16″×16″","color":null,"color_code":null,"color_code2":null,"image":"https://files.cdn.printful.com/products/1/4465_1527678875.jpg","price":"11.75","in_stock":true,"availability_regions":{"US":"United
+        States","EU":"Europe","EU_LV":"Latvia","EU_ES":"Spain","AU":"Australia","CA":"Canada"},"availability_status":[{"region":"US","status":"in_stock"},{"region":"EU","status":"in_stock"},{"region":"EU_LV","status":"in_stock"},{"region":"EU_ES","status":"in_stock"},{"region":"AU","status":"in_stock"},{"region":"CA","status":"in_stock"}]},{"id":3877,"product_id":1,"name":"Enhanced
+        Matte Paper Poster 16″×20″","size":"16″×20″","color":null,"color_code":null,"color_code2":null,"image":"https://files.cdn.printful.com/products/1/3877_1527678896.jpg","price":"12.00","in_stock":true,"availability_regions":{"US":"United
+        States","EU":"Europe","EU_LV":"Latvia","EU_ES":"Spain","AU":"Australia","CA":"Canada"},"availability_status":[{"region":"US","status":"in_stock"},{"region":"EU","status":"in_stock"},{"region":"EU_LV","status":"in_stock"},{"region":"EU_ES","status":"in_stock"},{"region":"AU","status":"in_stock"},{"region":"CA","status":"in_stock"}]},{"id":6242,"product_id":1,"name":"Enhanced
+        Matte Paper Poster 18″×18″","size":"18″×18″","color":null,"color_code":null,"color_code2":null,"image":"https://files.cdn.printful.com/products/1/6242_1527678943.jpg","price":"12.50","in_stock":true,"availability_regions":{"US":"United
+        States","EU":"Europe","EU_LV":"Latvia","EU_ES":"Spain","AU":"Australia","CA":"Canada"},"availability_status":[{"region":"US","status":"in_stock"},{"region":"EU","status":"in_stock"},{"region":"EU_LV","status":"in_stock"},{"region":"EU_ES","status":"in_stock"},{"region":"AU","status":"in_stock"},{"region":"CA","status":"in_stock"}]},{"id":1,"product_id":1,"name":"Enhanced
+        Matte Paper Poster 18″×24″","size":"18″×24″","color":null,"color_code":null,"color_code2":null,"image":"https://files.cdn.printful.com/products/1/1_1527683474.jpg","price":"13.00","in_stock":true,"availability_regions":{"US":"United
+        States","EU":"Europe","EU_LV":"Latvia","EU_ES":"Spain","AU":"Australia","CA":"Canada"},"availability_status":[{"region":"US","status":"in_stock"},{"region":"EU","status":"in_stock"},{"region":"EU_LV","status":"in_stock"},{"region":"EU_ES","status":"in_stock"},{"region":"AU","status":"in_stock"},{"region":"CA","status":"in_stock"}]},{"id":2,"product_id":1,"name":"Enhanced
+        Matte Paper Poster 24″×36″","size":"24″×36″","color":null,"color_code":null,"color_code2":null,"image":"https://files.cdn.printful.com/products/1/2_1527678974.jpg","price":"18.00","in_stock":true,"availability_regions":{"US":"United
+        States","EU":"Europe","EU_LV":"Latvia","EU_ES":"Spain","AU":"Australia","CA":"Canada"},"availability_status":[{"region":"US","status":"in_stock"},{"region":"EU","status":"in_stock"},{"region":"EU_LV","status":"in_stock"},{"region":"EU_ES","status":"in_stock"},{"region":"AU","status":"in_stock"},{"region":"CA","status":"in_stock"}]},{"id":4463,"product_id":1,"name":"Enhanced
+        Matte Paper Poster 8″×10″","size":"8″×10″","color":null,"color_code":null,"color_code2":null,"image":"https://files.cdn.printful.com/products/1/4463_1527678642.jpg","price":"7.00","in_stock":true,"availability_regions":{"US":"United
+        States","EU":"Europe","EU_LV":"Latvia","EU_ES":"Spain","AU":"Australia","CA":"Canada"},"availability_status":[{"region":"US","status":"in_stock"},{"region":"EU","status":"in_stock"},{"region":"EU_LV","status":"in_stock"},{"region":"EU_ES","status":"in_stock"},{"region":"AU","status":"in_stock"},{"region":"CA","status":"in_stock"}]}]},"extra":[]}'
+  recorded_at: Sat, 06 Nov 2021 03:55:56 GMT
+recorded_with: VCR 6.0.0

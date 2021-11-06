@@ -11,7 +11,13 @@ require_relative "printful_sdk/catalog"
 require_relative "printful_sdk/types"
 require_relative "printful_sdk/response"
 
-Dir["#{File.dirname(__FILE__)}/printful_sdk/resource/*.rb"].each { |file| require file }
+require_relative "printful_sdk/resource/file"
+require_relative "printful_sdk/resource/option"
+require_relative "printful_sdk/resource/availability_status"
+require_relative "printful_sdk/resource/product"
+require_relative "printful_sdk/resource/variant"
+require_relative "printful_sdk/resource/product_info"
+require_relative "printful_sdk/resource/variant_info"
 
 module PrintfulSdk
   class Error < StandardError; end
