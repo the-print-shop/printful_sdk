@@ -9,6 +9,7 @@ require_relative "printful_sdk/version"
 require_relative "printful_sdk/requestable"
 require_relative "printful_sdk/types"
 require_relative "printful_sdk/response"
+require_relative "printful_sdk/utils"
 
 require_relative "printful_sdk/resource/file"
 require_relative "printful_sdk/resource/option"

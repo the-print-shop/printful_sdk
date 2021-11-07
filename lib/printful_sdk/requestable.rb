@@ -10,10 +10,12 @@ module PrintfulSdk
     end
 
     module ClassMethods
-      def get(*args, &block)
-        result_type = args.shift
-        body = super(*args, &block).parsed_response
-        Response.with(result_type).new(body)
+      [:get, :post].each do |action|
+        define_method(action) do |*args, &block|
+          result_type = args.shift
+          body = super(*args, &block).parsed_response
+          Response.with(result_type).new(body)
+        end
       end
     end
   end

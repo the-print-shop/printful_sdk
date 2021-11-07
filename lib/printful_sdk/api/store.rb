@@ -7,7 +7,17 @@ module PrintfulSdk
         get(Resource::Store, "/store")
       end
 
-      def self.update_packing_slip(variant_id); end
+      def self.update_packing_slip(email:, phone:, message:)
+        post(
+          Utils.wrap(Resource::PackingSlip),
+          "/store/packing-slip",
+          body: {
+            email: email,
+            phone: phone,
+            message: message
+          }.to_json
+        )
+      end
     end
   end
 end
