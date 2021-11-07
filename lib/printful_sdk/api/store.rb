@@ -14,7 +14,7 @@ module PrintfulSdk
           body: {
             email: email,
             phone: phone,
-            message: message
+            message: message,
           }.to_json
         )
       end

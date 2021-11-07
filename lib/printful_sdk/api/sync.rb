@@ -8,7 +8,7 @@ module PrintfulSdk
           status: status,
           search: search,
           offset: offset,
-          limit: limit
+          limit: limit,
         })
       end
 

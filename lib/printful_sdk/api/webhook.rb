@@ -11,7 +11,7 @@ module PrintfulSdk
         post(Resource::Webhook, "/webhooks", body: {
           url: url,
           types: types,
-          params: params
+          params: params,
         }.to_json)
       end
 
