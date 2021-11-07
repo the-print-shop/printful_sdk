@@ -23,11 +23,11 @@ class WebhookTest < Minitest::Test
     end
   end
 
-  # def test_disable
-  #   VCR.use_cassette("webhook_disable") do
-  #     response = PrintfulSdk::Api::Webhook.disable
-  #     assert_equal(200, response.code)
-  #     assert_kind_of(PrintfulSdk::Resource::Webhook, response.result)
-  #   end
-  # end
+  def test_disable
+    VCR.use_cassette("webhook_disable") do
+      response = PrintfulSdk::Api::Webhook.disable
+      assert_equal(200, response.code)
+      assert_kind_of(PrintfulSdk::Resource::Webhook, response.result)
+    end
+  end
 end
