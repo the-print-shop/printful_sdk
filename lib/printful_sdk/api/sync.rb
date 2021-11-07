@@ -11,6 +11,10 @@ module PrintfulSdk
           limit: limit
         })
       end
+
+      def self.product(sync_product_id)
+        get(Resource::SyncProductInfo, "/sync/products/#{sync_product_id}")
+      end
     end
   end
 end

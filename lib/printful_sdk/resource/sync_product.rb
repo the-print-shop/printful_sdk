@@ -6,7 +6,7 @@ module PrintfulSdk
       transform_keys(&:to_sym)
 
       attribute :id, Types::Integer
-      attribute :external_id, Types::String.optional
+      attribute :external_id, Types::String
       attribute :name, Types::String
       attribute :variants, Types::Integer
       attribute :synced, Types::Integer

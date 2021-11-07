@@ -15,4 +15,12 @@ class SyncTest < Minitest::Test
       assert_kind_of(PrintfulSdk::Resource::Paging, response.paging)
     end
   end
+
+  def test_product
+    VCR.use_cassette("sync_product") do
+      response = PrintfulSdk::Api::Sync.product(205422259)
+      assert_equal(200, response.code)
+      assert_kind_of(PrintfulSdk::Resource::SyncProductInfo, response.result)
+    end
+  end
 end

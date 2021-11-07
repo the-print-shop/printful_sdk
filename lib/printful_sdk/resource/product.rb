@@ -14,7 +14,7 @@ module PrintfulSdk
       attribute :image, Types::String.optional
       attribute :variant_count, Types::Integer
       attribute :currency, Types::String
-      attribute :files, Types::Array.of(Resource::File)
+      attribute :files, Types::Array.of(Resource::FileType)
       attribute :options, Types::Array.of(Resource::Option)
       attribute :dimensions, Types::Hash.optional
       attribute :is_discontinued, Types::Bool
