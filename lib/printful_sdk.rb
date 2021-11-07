@@ -11,6 +11,8 @@ require_relative "printful_sdk/types"
 require_relative "printful_sdk/response"
 require_relative "printful_sdk/utils"
 
+require_relative "printful_sdk/resource/state"
+require_relative "printful_sdk/resource/country"
 require_relative "printful_sdk/resource/file"
 require_relative "printful_sdk/resource/option"
 require_relative "printful_sdk/resource/availability_status"
@@ -25,6 +27,7 @@ require_relative "printful_sdk/resource/variant_info"
 
 require_relative "printful_sdk/api/catalog"
 require_relative "printful_sdk/api/store"
+require_relative "printful_sdk/api/country"
 
 module PrintfulSdk
   class Error < StandardError; end
@@ -39,5 +42,6 @@ module PrintfulSdk
 
     Api::Catalog.include(Requestable)
     Api::Store.include(Requestable)
+    Api::Country.include(Requestable)
   end
 end
