@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.printful.com/sync/products?limit=100&offset=0&search=&status=synced
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Basic <API_KEY>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 07 Nov 2021 13:47:55 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '120'
+      X-Ratelimit-Remaining:
+      - '119'
+      X-Ratelimit-Reset:
+      - '60'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Set-Cookie:
+      - __cf_bm=5rtvZ897.rRDHCq7V8218xMYjF3.gvBP3uwGpX_A2ME-1636292875-0-ASLWX1fx6iaBiZsHsV5F2PUxaAIDUfDBbliJEGIqOgk/oHNA5c2T6XMFui++d1nh0U795UGxkiHPCraHip8U6JA=;
+        path=/; expires=Sun, 07-Nov-21 14:17:55 GMT; domain=.printful.com; HttpOnly;
+        Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6aa70426db24eb91-LAX
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"code":200,"result":[{"id":205422259,"external_id":"5606589595670","name":"Crop
+        Tee","variants":5,"synced":5,"thumbnail_url":"https://cdn.shopify.com/s/files/1/0455/8602/2422/products/mockup-b0ed1ccd_grande.jpg?v=1606885736","is_ignored":false},{"id":205422221,"external_id":"5606589202454","name":"Sublimation
+        Cut & Sew Tank Top","variants":5,"synced":5,"thumbnail_url":"https://cdn.shopify.com/s/files/1/0455/8602/2422/products/mockup-0021f459_grande.jpg?v=1606885679","is_ignored":false},{"id":205422122,"external_id":"5606588383254","name":"Mug
+        with Color Inside","variants":1,"synced":1,"thumbnail_url":"https://cdn.shopify.com/s/files/1/0455/8602/2422/products/mockup-c368a0e4_grande.jpg?v=1606885554","is_ignored":false},{"id":205422089,"external_id":"5606588186646","name":"Men''s
+        Joggers","variants":7,"synced":7,"thumbnail_url":"https://cdn.shopify.com/s/files/1/0455/8602/2422/products/mockup-ded7d30b_grande.jpg?v=1606885514","is_ignored":false},{"id":205422017,"external_id":"5606587498518","name":"Visor","variants":1,"synced":1,"thumbnail_url":"https://cdn.shopify.com/s/files/1/0455/8602/2422/products/mockup-cc595aa6_grande.jpg?v=1606885393","is_ignored":false},{"id":205421835,"external_id":"5606586712086","name":"Beach
+        Bag","variants":1,"synced":1,"thumbnail_url":"https://cdn.shopify.com/s/files/1/0455/8602/2422/products/mockup-bcac3bb8_grande.jpg?v=1606885240","is_ignored":false},{"id":205421778,"external_id":"5606586515478","name":"Biodegradable
+        phone case","variants":8,"synced":8,"thumbnail_url":"https://cdn.shopify.com/s/files/1/0455/8602/2422/products/mockup-e608f1a6_grande.jpg?v=1606885215","is_ignored":false},{"id":205421731,"external_id":"5606586351638","name":"Men''s
+        Champion performance polo","variants":5,"synced":5,"thumbnail_url":"https://cdn.shopify.com/s/files/1/0455/8602/2422/products/mockup-f8e82155_grande.jpg?v=1606885197","is_ignored":false},{"id":205421588,"external_id":"5606586187798","name":"Men''s
+        T-shirt","variants":6,"synced":6,"thumbnail_url":"https://cdn.shopify.com/s/files/1/0455/8602/2422/products/mockup-6940f3cd_grande.jpg?v=1606885167","is_ignored":false},{"id":205421512,"external_id":"5606585565206","name":"Short-Sleeve
+        Unisex T-Shirt","variants":8,"synced":8,"thumbnail_url":"https://cdn.shopify.com/s/files/1/0455/8602/2422/products/mockup-013f2fb9_grande.jpg?v=1606885079","is_ignored":false},{"id":205413136,"external_id":"5606573080598","name":"Men''s
+        heavyweight tee","variants":3,"synced":3,"thumbnail_url":"https://cdn.shopify.com/s/files/1/0455/8602/2422/products/mockup-c824e552_grande.jpg?v=1606880125","is_ignored":false},{"id":197447560,"external_id":"5597654515734","name":"Google
+        Chrome Sticker","variants":3,"synced":3,"thumbnail_url":"https://cdn.shopify.com/s/files/1/0455/8602/2422/products/mockup-33400fae_grande.jpg?v=1602514841","is_ignored":false}],"extra":[],"paging":{"total":12,"offset":0,"limit":100}}'
+  recorded_at: Sun, 07 Nov 2021 13:47:51 GMT
+recorded_with: VCR 6.0.0

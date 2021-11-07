@@ -33,7 +33,7 @@ require_relative "printful_sdk/api/catalog"
 require_relative "printful_sdk/api/store"
 require_relative "printful_sdk/api/country"
 require_relative "printful_sdk/api/webhook"
-require_relative "printful_sdk/api/products"
+require_relative "printful_sdk/api/sync"
 
 module PrintfulSdk
   class Error < StandardError; end
@@ -51,7 +51,7 @@ module PrintfulSdk
       Api::Store,
       Api::Country,
       Api::Webhook,
-      Api::Products,
+      Api::Sync,
     ].each do |api|
       api.include(Requestable)
     end
