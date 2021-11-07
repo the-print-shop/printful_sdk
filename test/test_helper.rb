@@ -19,5 +19,5 @@ VCR.configure do |config|
 end
 
 PrintfulSdk.configure do |config|
-  config.api_key = ENV["API_KEY"]
+  config.api_key = ENV["API_KEY"] || 'TEST_API_KEY'
 end
