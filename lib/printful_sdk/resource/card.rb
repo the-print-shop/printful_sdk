@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module PrintfulSdk
   module Resource
     class Card < Dry::Struct

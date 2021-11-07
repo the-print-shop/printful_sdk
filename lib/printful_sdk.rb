@@ -36,7 +36,7 @@ module PrintfulSdk
     self.configuration ||= Configuration.new
     yield configuration
 
-    Api::Catalog.include Requestable
-    Api::Store.include Requestable
+    Api::Catalog.include(Requestable)
+    Api::Store.include(Requestable)
   end
 end

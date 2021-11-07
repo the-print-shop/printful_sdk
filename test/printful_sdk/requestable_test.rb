@@ -8,11 +8,11 @@ class RequestableTest < Minitest::Test
   end
 
   def test_include_httparty_module
-    assert TestClient.include?(HTTParty)
+    assert_includes(TestClient, HTTParty)
   end
 
   def test_auth_header
-    assert_equal PrintfulSdk.configuration.endpoint, TestClient.default_options[:base_uri]
+    assert_equal(PrintfulSdk.configuration.endpoint, TestClient.default_options[:base_uri])
     assert_match(/Basic *+/, TestClient.default_options[:headers]["Authorization"])
   end
 end
