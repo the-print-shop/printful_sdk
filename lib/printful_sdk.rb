@@ -11,6 +11,7 @@ require_relative "printful_sdk/types"
 require_relative "printful_sdk/response"
 require_relative "printful_sdk/utils"
 
+require_relative "printful_sdk/resource/webhook"
 require_relative "printful_sdk/resource/state"
 require_relative "printful_sdk/resource/country"
 require_relative "printful_sdk/resource/file"
@@ -28,6 +29,7 @@ require_relative "printful_sdk/resource/variant_info"
 require_relative "printful_sdk/api/catalog"
 require_relative "printful_sdk/api/store"
 require_relative "printful_sdk/api/country"
+require_relative "printful_sdk/api/webhook"
 
 module PrintfulSdk
   class Error < StandardError; end
@@ -40,8 +42,13 @@ module PrintfulSdk
     self.configuration ||= Configuration.new
     yield configuration
 
-    Api::Catalog.include(Requestable)
-    Api::Store.include(Requestable)
-    Api::Country.include(Requestable)
+    [
+      Api::Catalog,
+      Api::Store,
+      Api::Country,
+      Api::Webhook,
+    ].each do |api|
+      api.include(Requestable)
+    end
   end
 end

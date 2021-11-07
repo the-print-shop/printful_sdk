@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.printful.com/webhooks
+    body:
+      encoding: UTF-8
+      string: '{"url":"https://dev-pocket.testing.io","types":["package_shipped","package_returned"],"params":[]}'
+    headers:
+      Authorization:
+      - Basic <API_KEY>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 07 Nov 2021 08:21:29 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '120'
+      X-Ratelimit-Remaining:
+      - '119'
+      X-Ratelimit-Reset:
+      - '60'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Set-Cookie:
+      - __cf_bm=Xbl6tKr20DLmtBjz1hatVK_AyMAwDvubMUppt.1.XEA-1636273289-0-AR282O5a6YR6UiApnsMs3GyI8RARXtfeE/5GsAIf3L8xxXZPFYse8aj/51kvO6AJm/d8eE85XFfnmFi7jNIekK4=;
+        path=/; expires=Sun, 07-Nov-21 08:51:29 GMT; domain=.printful.com; HttpOnly;
+        Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6aa525f8097f206b-NRT
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"code":200,"result":{"url":"https://dev-pocket.testing.io","types":["package_shipped","package_returned"],"params":[]},"extra":[]}'
+  recorded_at: Sun, 07 Nov 2021 08:21:26 GMT
+recorded_with: VCR 6.0.0
