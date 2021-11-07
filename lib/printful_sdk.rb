@@ -8,7 +8,6 @@ require_relative "printful_sdk/configuration"
 require_relative "printful_sdk/version"
 require_relative "printful_sdk/requestable"
 require_relative "printful_sdk/types"
-require_relative "printful_sdk/response"
 require_relative "printful_sdk/utils"
 
 require_relative "printful_sdk/resource/webhook"
@@ -25,11 +24,16 @@ require_relative "printful_sdk/resource/product"
 require_relative "printful_sdk/resource/variant"
 require_relative "printful_sdk/resource/product_info"
 require_relative "printful_sdk/resource/variant_info"
+require_relative "printful_sdk/resource/paging"
+require_relative "printful_sdk/resource/sync_product"
+
+require_relative "printful_sdk/response"
 
 require_relative "printful_sdk/api/catalog"
 require_relative "printful_sdk/api/store"
 require_relative "printful_sdk/api/country"
 require_relative "printful_sdk/api/webhook"
+require_relative "printful_sdk/api/products"
 
 module PrintfulSdk
   class Error < StandardError; end
@@ -47,6 +51,7 @@ module PrintfulSdk
       Api::Store,
       Api::Country,
       Api::Webhook,
+      Api::Products,
     ].each do |api|
       api.include(Requestable)
     end

@@ -5,6 +5,7 @@ module PrintfulSdk
     transform_keys(&:to_sym)
 
     attribute :code, Types::Integer
+    attribute? :paging, Resource::Paging.optional
 
     def self.with(result_type)
       Class.new(self).tap do |klass|
