@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: https://api.printful.com/sync/products/205422259
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Basic <API_KEY>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 08 Nov 2021 14:56:59 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '120'
+      X-Ratelimit-Remaining:
+      - '119'
+      X-Ratelimit-Reset:
+      - '60'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Set-Cookie:
+      - __cf_bm=lLJhgqlhX.NelSkeTxCIWLtZZqoikb3qTLKAE.5mCWE-1636383419-0-AQktolZ8ZFDsfewc3xkA/6y3DD2uCAlYVi5Sad6Vy7MKGPMwlA00k3YgYNK41+ZVh/uGHPmzi6AJe74pLMLDcH0=;
+        path=/; expires=Mon, 08-Nov-21 15:26:59 GMT; domain=.printful.com; HttpOnly;
+        Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6aafa6b14a503535-NRT
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"code":200,"result":{"sync_product":{"id":205422259,"external_id":"5606589595670","name":"Crop
+        Tee","variants":5,"synced":0,"thumbnail_url":"https://cdn.shopify.com/s/files/1/0455/8602/2422/products/mockup-b0ed1ccd_grande.jpg?v=1606885736","is_ignored":false},"sync_variants":[{"id":2315318572,"external_id":"35654832619542","sync_product_id":205422259,"name":"Crop
+        Tee - S","synced":false,"variant_id":null,"warehouse_product_variant_id":null,"retail_price":"28.00","sku":"9732204_10261","currency":"USD","product":null,"files":[],"options":[],"is_ignored":false},{"id":2315318573,"external_id":"35654832652310","sync_product_id":205422259,"name":"Crop
+        Tee - M","synced":false,"variant_id":null,"warehouse_product_variant_id":null,"retail_price":"28.00","sku":"9732204_10262","currency":"USD","product":null,"files":[],"options":[],"is_ignored":false},{"id":2315318574,"external_id":"35654832685078","sync_product_id":205422259,"name":"Crop
+        Tee - L","synced":false,"variant_id":null,"warehouse_product_variant_id":null,"retail_price":"28.00","sku":"9732204_10263","currency":"USD","product":null,"files":[],"options":[],"is_ignored":false},{"id":2315318575,"external_id":"35654832717846","sync_product_id":205422259,"name":"Crop
+        Tee - XL","synced":false,"variant_id":null,"warehouse_product_variant_id":null,"retail_price":"28.00","sku":"9732204_10264","currency":"USD","product":null,"files":[],"options":[],"is_ignored":false},{"id":2315318576,"external_id":"35654832750614","sync_product_id":205422259,"name":"Crop
+        Tee - 2XL","synced":false,"variant_id":null,"warehouse_product_variant_id":null,"retail_price":"29.50","sku":"9732204_10265","currency":"USD","product":null,"files":[],"options":[],"is_ignored":false}]},"extra":[]}'
+  recorded_at: Mon, 08 Nov 2021 14:56:59 GMT
+recorded_with: VCR 6.0.0
