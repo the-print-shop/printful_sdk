@@ -31,4 +31,12 @@ class SyncTest < Minitest::Test
       assert_kind_of(PrintfulSdk::Resource::SyncVariantInfo, response.result)
     end
   end
+
+  def test_unlink_variant
+    VCR.use_cassette("sync_unlink_variant") do
+      response = PrintfulSdk::Api::Sync.unlink_variant(2315318572)
+      assert_equal(200, response.code)
+      assert_kind_of(PrintfulSdk::Resource::SyncVariantInfo, response.result)
+    end
+  end
 end

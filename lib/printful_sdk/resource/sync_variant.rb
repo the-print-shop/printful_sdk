@@ -16,12 +16,7 @@ module PrintfulSdk
       attribute :sku, Types::String
       attribute :currency, Types::String
       attribute :is_ignored, Types::Bool
-      attribute :product do
-        attribute :variant_id, Types::Integer
-        attribute :product_id, Types::Integer
-        attribute :image, Types::String
-        attribute :name, Types::String
-      end
+      attribute :product, Resource::ProductVariant.optional
       attribute :files, Types::Array.of(Resource::File)
       attribute :options, Types::Array do
         attribute :id, Types::String
