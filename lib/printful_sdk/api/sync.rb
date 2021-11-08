@@ -15,6 +15,18 @@ module PrintfulSdk
       def self.product(sync_product_id)
         get(Resource::SyncProductInfo, "/sync/products/#{sync_product_id}")
       end
+
+      def self.unlik_product(sync_product_id)
+        delete(Resource::SyncProductInfo, "/sync/products/#{sync_product_id}")
+      end
+
+      def self.variant(sync_variant_id)
+        get(Resource::SyncVariantInfo, "/sync/variant/#{sync_variant_id}")
+      end
+
+      def self.unlink_variant(sync_variant_id)
+        delete(Resource::SyncVariantInfo, "/sync/variant/#{sync_variant_id}")
+      end
     end
   end
 end

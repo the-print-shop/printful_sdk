@@ -15,7 +15,11 @@ module PrintfulSdk
         define_method(action) do |*args, &block|
           result_type = args.shift
           body = super(*args, &block).parsed_response
-          Response.with(result_type).new(body)
+          if body["code"] == 200
+            Response.with(result_type).new(body)
+          else
+            ErrorResponse.new(body)
+          end
         end
       end
     end

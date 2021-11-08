@@ -23,4 +23,12 @@ class SyncTest < Minitest::Test
       assert_kind_of(PrintfulSdk::Resource::SyncProductInfo, response.result)
     end
   end
+
+  def test_variant
+    VCR.use_cassette("sync_variant") do
+      response = PrintfulSdk::Api::Sync.variant(2315318572)
+      assert_equal(200, response.code)
+      assert_kind_of(PrintfulSdk::Resource::SyncVariantInfo, response.result)
+    end
+  end
 end

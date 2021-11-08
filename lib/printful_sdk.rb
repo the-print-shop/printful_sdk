@@ -29,8 +29,10 @@ require_relative "printful_sdk/resource/paging"
 require_relative "printful_sdk/resource/sync_product"
 require_relative "printful_sdk/resource/sync_variant"
 require_relative "printful_sdk/resource/sync_product_info"
+require_relative "printful_sdk/resource/sync_variant_info"
 
 require_relative "printful_sdk/response"
+require_relative "printful_sdk/error_response"
 
 require_relative "printful_sdk/api/catalog"
 require_relative "printful_sdk/api/store"

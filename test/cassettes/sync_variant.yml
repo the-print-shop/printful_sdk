@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.printful.com/sync/variant/2315318572
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Basic <API_KEY>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 08 Nov 2021 14:45:46 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '120'
+      X-Ratelimit-Remaining:
+      - '119'
+      X-Ratelimit-Reset:
+      - '60'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Set-Cookie:
+      - __cf_bm=AFnptTStcYgK9fmnxi1x1oAHr7W6eIcxu.5n_fV2RQA-1636382746-0-AS8g4eLSzYqiPaY7eujqlugL4NaB3/5Y6Vd/+/rYgYo7Fh0OoYTvMvIu38nxdJdzpUD9Rxjagmv2ypY0dEPF0D8=;
+        path=/; expires=Mon, 08-Nov-21 15:15:46 GMT; domain=.printful.com; HttpOnly;
+        Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6aaf9643cb273541-NRT
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"code":200,"result":{"sync_variant":{"id":2315318572,"external_id":"35654832619542","sync_product_id":205422259,"name":"Crop
+        Tee - S","synced":true,"variant_id":10261,"warehouse_product_variant_id":null,"retail_price":"28.00","sku":"9732204_10261","currency":"USD","product":{"variant_id":10261,"product_id":361,"image":"https://files.cdn.printful.com/products/361/10261_1564476502.jpg","name":"Bella
+        + Canvas 8882 Women''s Flowy Crop Tee (Black / S)"},"files":[{"id":265277361,"type":"embroidery_chest_left","hash":"75f0fc81e9f9039830f1e5a53d79bc87","url":null,"filename":"68545489-embroidery_chest_left.png","mime_type":"image/png","size":12236,"width":1200,"height":1200,"dpi":300,"status":"ok","created":1606885730,"thumbnail_url":"https://files.cdn.printful.com/files/75f/75f0fc81e9f9039830f1e5a53d79bc87_thumb.png","preview_url":"https://files.cdn.printful.com/files/75f/75f0fc81e9f9039830f1e5a53d79bc87_preview.png","visible":true},{"id":265277372,"type":"preview","hash":"ba04ffc568a510a820911e0982a80bc4","url":null,"filename":"mockup-b0ed1ccd.jpg","mime_type":"image/jpeg","size":46042,"width":1000,"height":1000,"dpi":null,"status":"ok","created":1606885734,"thumbnail_url":"https://files.cdn.printful.com/files/ba0/ba04ffc568a510a820911e0982a80bc4_thumb.png","preview_url":"https://files.cdn.printful.com/files/ba0/ba04ffc568a510a820911e0982a80bc4_preview.png","visible":false}],"options":[{"id":"embroidery_type","value":"flat"},{"id":"thread_colors","value":[]},{"id":"text_thread_colors","value":[]},{"id":"thread_colors_3d","value":[]},{"id":"thread_colors_chest_left","value":[]},{"id":"text_thread_colors_chest_left","value":[]}],"is_ignored":false},"sync_product":{"id":205422259,"external_id":"5606589595670","name":"Crop
+        Tee","variants":5,"synced":5,"thumbnail_url":"https://cdn.shopify.com/s/files/1/0455/8602/2422/products/mockup-b0ed1ccd_grande.jpg?v=1606885736","is_ignored":false}},"extra":[]}'
+  recorded_at: Mon, 08 Nov 2021 14:45:46 GMT
+recorded_with: VCR 6.0.0
