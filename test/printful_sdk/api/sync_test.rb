@@ -40,11 +40,16 @@ class SyncTest < Minitest::Test
     end
   end
 
-  def test_unlink_product
-    VCR.use_cassette("sync_unlink_product") do
-      response = PrintfulSdk::Api::Sync.unlink_product(205422259)
+  def test_update_variant
+    VCR.use_cassette("sync_update_variant") do
+      response = PrintfulSdk::Api::Sync.update_variant(
+        2315318572,
+        {
+          name: "Updated Tee - S",
+        }
+      )
       assert_equal(200, response.code)
-      assert_kind_of(PrintfulSdk::Resource::SyncProductInfo, response.result)
+      assert_kind_of(PrintfulSdk::Resource::SyncVariantInfo, response.result)
     end
   end
 end

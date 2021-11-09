@@ -11,7 +11,7 @@ module PrintfulSdk
     end
 
     module ClassMethods
-      [:get, :post, :delete].each do |action|
+      [:get, :post, :delete, :put].each do |action|
         define_method(action) do |*args, &block|
           result_type = args.shift
           body = super(*args, &block).parsed_response

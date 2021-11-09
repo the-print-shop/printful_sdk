@@ -27,6 +27,14 @@ module PrintfulSdk
       def self.unlink_variant(sync_variant_id)
         delete(Resource::SyncVariantInfo, "/sync/variant/#{sync_variant_id}")
       end
+
+      def self.update_variant(sync_variant_id, sync_variant)
+        put(
+          Resource::SyncVariantInfo,
+          "/sync/variant/#{sync_variant_id}",
+          body: sync_variant.to_json
+        )
+      end
     end
   end
 end
