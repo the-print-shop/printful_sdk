@@ -9,7 +9,8 @@ module PrintfulSdk
         "in_stock",
         "stocked_on_demand",
         "discontinued",
-        "out_of_stock"
+        "out_of_stock",
+        "supplier_out_of_stock"
       )
 
       attribute :region, Types::String

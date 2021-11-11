@@ -8,8 +8,11 @@ require "printful_sdk"
 # with your gem easier. You can also use a different console, if you like.
 
 # (If you use this, don't forget to add pry to your Gemfile!)
+require "dotenv/load"
+
+PrintfulSdk.configure do |config|
+  config.api_key = ENV["API_KEY"] || "TEST_API_KEY"
+end
+
 require "pry"
 Pry.start
-
-# require "irb"
-# IRB.start(__FILE__)
