@@ -34,6 +34,8 @@ require_relative "printful_sdk/resource/sync_variant_info"
 require_relative "printful_sdk/resource/variant_printfile"
 require_relative "printful_sdk/resource/printfile"
 require_relative "printful_sdk/resource/printfile_info"
+require_relative "printful_sdk/resource/mockup"
+require_relative "printful_sdk/resource/generation_task"
 
 require_relative "printful_sdk/response"
 require_relative "printful_sdk/error_response"
@@ -44,6 +46,8 @@ require_relative "printful_sdk/api/country"
 require_relative "printful_sdk/api/webhook"
 require_relative "printful_sdk/api/sync"
 require_relative "printful_sdk/api/mockup"
+
+require_relative "printful_sdk/formulas/matt_poster"
 
 module PrintfulSdk
   class Error < StandardError; end

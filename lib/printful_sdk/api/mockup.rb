@@ -12,11 +12,11 @@ module PrintfulSdk
       end
 
       def self.create_task(product_id, body)
-        post(Resource::Task, "/mockup-generator/create-task/#{product_id}", body: body.to_json)
+        post(Resource::GenerationTask, "/mockup-generator/create-task/#{product_id}", body: body.to_json)
       end
 
       def self.task_info(task_key)
-        get(Resource::Task, "/mockup-generator/task", query: {
+        get(Resource::GenerationTask, "/mockup-generator/task", query: {
           task_key: task_key,
         })
       end
