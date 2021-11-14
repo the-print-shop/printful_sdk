@@ -9,7 +9,6 @@ class MockupTest < Minitest::Test
         71,
         orientation: "vertical"
       )
-      binding.pry
       assert_equal(200, response.code)
       assert_kind_of(PrintfulSdk::Resource::PrintfileInfo, response.result)
     end
