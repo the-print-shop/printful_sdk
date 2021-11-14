@@ -46,6 +46,7 @@ require_relative "printful_sdk/api/country"
 require_relative "printful_sdk/api/webhook"
 require_relative "printful_sdk/api/sync"
 require_relative "printful_sdk/api/mockup"
+require_relative "printful_sdk/api/products"
 
 require_relative "printful_sdk/formulas/matt_poster"
 
@@ -67,6 +68,7 @@ module PrintfulSdk
       Api::Webhook,
       Api::Sync,
       Api::Mockup,
+      Api::Products,
     ].each do |api|
       api.include(Requestable)
     end

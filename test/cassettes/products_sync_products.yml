@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.printful.com/store/products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Basic <API_KEY>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 14 Nov 2021 06:04:41 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '120'
+      X-Ratelimit-Remaining:
+      - '119'
+      X-Ratelimit-Reset:
+      - '60'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Set-Cookie:
+      - __cf_bm=bgbgzy28Ii3Bow97UundhvH6KTZPhXx.huRHzDE0Vdo-1636869881-0-AUADTxKDXv2WKvrSxVlQo8Ce+qPiJ1KN6C4kyOgJHCnBxkvAyp6cQTuAeH86zgl/tGU52nq2BHaByEEZm+4hTuA=;
+        path=/; expires=Sun, 14-Nov-21 06:34:41 GMT; domain=.printful.com; HttpOnly;
+        Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6ade0b376cc5eba9-LAX
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"code":200,"result":[{"id":254727851,"external_id":"4235234213","name":"T-shirt","variants":1,"synced":1,"thumbnail_url":"http://your-domain.com/path/to/thumbnail.png","is_ignored":true}],"extra":[],"paging":{"total":1,"offset":0,"limit":20}}'
+  recorded_at: Sun, 14 Nov 2021 06:04:40 GMT
+recorded_with: VCR 6.0.0

@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.printful.com/store/products
+    body:
+      encoding: UTF-8
+      string: '{"sync_product":{"external_id":"4235234213","name":"T-shirt","thumbnail":"http://your-domain.com/path/to/thumbnail.png","is_ignored":true},"sync_variants":[{"external_id":"12312414","variant_id":1,"retail_price":29.99,"is_ignored":true,"sku":"SKU1234","files":[{"type":"default","url":"https://i.pinimg.com/originals/eb/9e/3b/eb9e3b7dab09358e7cf13f188f64f9f4.png","options":[],"filename":"shirt1.png","visible":true}],"options":[]}]}'
+    headers:
+      Authorization:
+      - Basic <API_KEY>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 14 Nov 2021 06:04:22 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '10'
+      X-Ratelimit-Remaining:
+      - '9'
+      X-Ratelimit-Reset:
+      - '60'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Set-Cookie:
+      - __cf_bm=D64z5y_kZCN4Qfmvjj2gKJI74hKQl4p8PZw9lcKqn.M-1636869862-0-AWYgecBhl/rEaYUDHx7y2gb9/yT8+dQi1X9cFryoBCrP8TV9exDryZFZrcx47ZgqPnxI5RxpC1PsawO568tWNNk=;
+        path=/; expires=Sun, 14-Nov-21 06:34:22 GMT; domain=.printful.com; HttpOnly;
+        Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6ade0ac1ca8bebd5-LAX
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"code":200,"result":{"id":254727851,"external_id":"4235234213","name":"T-shirt","variants":1,"synced":1,"thumbnail_url":"http://your-domain.com/path/to/thumbnail.png","is_ignored":true},"extra":[]}'
+  recorded_at: Sun, 14 Nov 2021 06:04:21 GMT
+recorded_with: VCR 6.0.0
