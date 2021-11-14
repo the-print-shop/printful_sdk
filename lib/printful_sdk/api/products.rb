@@ -25,6 +25,14 @@ module PrintfulSdk
           "/store/products/#{sync_product_id}"
         )
       end
+
+      def self.update_sync_product(sync_product_id, payload)
+        put(
+          Resource::SyncProduct,
+          "/store/products/#{sync_product_id}",
+          body: payload.to_json
+        )
+      end
     end
   end
 end
