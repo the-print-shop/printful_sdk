@@ -18,6 +18,13 @@ module PrintfulSdk
           body: payload.to_json
         )
       end
+
+      def self.sync_product(sync_product_id)
+        get(
+          Resource::SyncProductInfo,
+          "/store/products/#{sync_product_id}"
+        )
+      end
     end
   end
 end

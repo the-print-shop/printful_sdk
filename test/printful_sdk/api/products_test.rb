@@ -46,4 +46,12 @@ class ProductsTest < Minitest::Test
       assert_kind_of(PrintfulSdk::Resource::SyncProduct, response.result)
     end
   end
+
+  def test_sync_product
+    VCR.use_cassette("products_sync_product") do
+      response = PrintfulSdk::Api::Products.sync_product(254727851)
+      assert_equal(200, response.code)
+      assert_kind_of(PrintfulSdk::Resource::SyncProductInfo, response.result)
+    end
+  end
 end
