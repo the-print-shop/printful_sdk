@@ -33,6 +33,21 @@ module PrintfulSdk
           body: payload.to_json
         )
       end
+
+      def self.sync_variant(sync_variant_id)
+        get(
+          Resource::SyncVariant,
+          "/store/variants/#{sync_variant_id}"
+        )
+      end
+
+      def self.update_sync_variant(sync_variant_id, payload)
+        put(
+          Resource::SyncVariant,
+          "/store/variants/#{sync_variant_id}",
+          body: payload.to_json
+        )
+      end
     end
   end
 end

@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.printful.com/store/variants/2965869092
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Basic <API_KEY>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 14 Nov 2021 06:28:36 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '120'
+      X-Ratelimit-Remaining:
+      - '119'
+      X-Ratelimit-Reset:
+      - '60'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Set-Cookie:
+      - __cf_bm=W0eRxpfpqfLuiB1mPJ_krqLLuwMF9LBHPsPnIn90O5Q-1636871316-0-Afa5EwUrh6PwN9zH8X2qNIXamE+K/AmScIl+Ws1jwq4M2AsD3wu1fJngFJr7u9HxRWl9jSd1ZJJc4svUpR9ihSA=;
+        path=/; expires=Sun, 14-Nov-21 06:58:36 GMT; domain=.printful.com; HttpOnly;
+        Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6ade2e3ca92552e9-LAX
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"code":200,"result":{"id":2965869092,"external_id":"12312414","sync_product_id":254727851,"name":"T-shirt-updated
+        - 18″×24″","synced":true,"variant_id":1,"warehouse_product_variant_id":null,"retail_price":"29.99","sku":"SKU1234","currency":"USD","product":{"variant_id":1,"product_id":1,"image":"https://files.cdn.printful.com/products/1/1_1527683474.jpg","name":"Enhanced
+        Matte Paper Poster 18″×24″"},"files":[{"id":376236803,"type":"default","hash":"5b08a602cf08dc63413746622c21713c","url":"https://i.pinimg.com/originals/eb/9e/3b/eb9e3b7dab09358e7cf13f188f64f9f4.png","filename":"eb9e3b7dab09358e7cf13f188f64f9f4.png","mime_type":"image/png","size":190627,"width":1808,"height":936,"dpi":125,"status":"ok","created":1636869862,"thumbnail_url":"https://files.cdn.printful.com/files/5b0/5b08a602cf08dc63413746622c21713c_thumb.png","preview_url":"https://files.cdn.printful.com/files/5b0/5b08a602cf08dc63413746622c21713c_preview.png","visible":true},{"id":376237210,"type":"preview","hash":"c08dfb4f76101b0396b97bf21b23208f","url":null,"filename":"enhanced-matte-paper-poster-(in)-18x24-transparent-6190a72889547.png","mime_type":"image/png","size":130062,"width":1000,"height":1000,"dpi":null,"status":"ok","created":1636869929,"thumbnail_url":"https://files.cdn.printful.com/files/c08/c08dfb4f76101b0396b97bf21b23208f_thumb.png","preview_url":"https://files.cdn.printful.com/files/c08/c08dfb4f76101b0396b97bf21b23208f_preview.png","visible":false}],"options":[],"is_ignored":true},"extra":[]}'
+  recorded_at: Sun, 14 Nov 2021 06:28:34 GMT
+recorded_with: VCR 6.0.0

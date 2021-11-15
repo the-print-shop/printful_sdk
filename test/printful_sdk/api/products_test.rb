@@ -66,4 +66,22 @@ class ProductsTest < Minitest::Test
       assert_kind_of(PrintfulSdk::Resource::SyncProduct, response.result)
     end
   end
+
+  def test_sync_variant
+    VCR.use_cassette("products_sync_variant") do
+      response = PrintfulSdk::Api::Products.sync_variant(2965869092)
+      assert_equal(200, response.code)
+      assert_kind_of(PrintfulSdk::Resource::SyncVariant, response.result)
+    end
+  end
+
+  def test_update_sync_variant
+    VCR.use_cassette("products_update_sync_variant") do
+      response = PrintfulSdk::Api::Products.update_sync_variant(2965869092, {
+        sku: "SK123"
+      })
+      assert_equal(200, response.code)
+      assert_kind_of(PrintfulSdk::Resource::SyncVariant, response.result)
+    end
+  end
 end
