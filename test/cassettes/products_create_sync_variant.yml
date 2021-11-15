@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.printful.com/store/products/254727851/variants
+    body:
+      encoding: UTF-8
+      string: '{"external_id":"12343205","variant_id":1,"retail_price":29.99,"is_ignored":true,"sku":"SKU1234","files":[{"type":"default","url":"http://your-domain.com/path/to/thumbnail.png","options":[],"filename":"shirt1.png","visible":true}]}'
+    headers:
+      Authorization:
+      - Basic <API_KEY>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 15 Nov 2021 13:37:15 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '10'
+      X-Ratelimit-Remaining:
+      - '9'
+      X-Ratelimit-Reset:
+      - '60'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Set-Cookie:
+      - __cf_bm=KvrwU9uvOem7qEE0J5mqfejB.dRoJAw0nu1QvvDT7Pg-1636983435-0-AcmIPGwBiBqjJ0w0e4NwU+L7B35Xbi8CynHoS/QzjLJl/DGqruoMO3wBTX8PG60ZSsQ8DMMCybTfPno+cpB+CtA=;
+        path=/; expires=Mon, 15-Nov-21 14:07:15 GMT; domain=.printful.com; HttpOnly;
+        Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6ae8df84b8e85257-LAX
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"code":200,"result":{"id":2967576806,"external_id":"12343205","sync_product_id":254727851,"name":"T-shirt-updated
+        - 18″×24″","synced":true,"variant_id":1,"warehouse_product_variant_id":null,"retail_price":29.99,"sku":"SKU1234","currency":"USD","product":{"variant_id":1,"product_id":1,"image":"https://files.cdn.printful.com/products/1/1_1527683474.jpg","name":"Enhanced
+        Matte Paper Poster 18″×24″"},"files":[{"id":376621068,"type":"default","hash":null,"url":"http://your-domain.com/path/to/thumbnail.png","filename":null,"mime_type":null,"size":0,"width":null,"height":null,"dpi":null,"status":"waiting","created":1636983435,"thumbnail_url":null,"preview_url":null,"visible":true}],"options":[],"is_ignored":true},"extra":[]}'
+  recorded_at: Mon, 15 Nov 2021 13:37:15 GMT
+recorded_with: VCR 6.0.0

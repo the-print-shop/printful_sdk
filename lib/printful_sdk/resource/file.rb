@@ -13,13 +13,13 @@ module PrintfulSdk
 
       attribute :id, Types::Integer
       attribute :type, Types::String
-      attribute :hash, Types::String
+      attribute :hash, Types::String.optional
       attribute :url, Types::String.optional
-      attribute :filename, Types::String
-      attribute :mime_type, Types::String
+      attribute :filename, Types::String.optional
+      attribute :mime_type, Types::String.optional
       attribute :size, Types::Integer
-      attribute :width, Types::Integer
-      attribute :height, Types::Integer
+      attribute :width, Types::Integer.optional
+      attribute :height, Types::Integer.optional
       attribute :dpi, Types::Integer.optional
       attribute :status, Statuses
       attribute :created, Types::Integer

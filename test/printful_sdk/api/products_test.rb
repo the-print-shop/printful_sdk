@@ -84,4 +84,27 @@ class ProductsTest < Minitest::Test
       assert_kind_of(PrintfulSdk::Resource::SyncVariant, response.result)
     end
   end
+
+  def test_create_sync_variant
+    VCR.use_cassette("products_create_sync_variant") do
+      response = PrintfulSdk::Api::Products.create_sync_variant(254727851, {
+        external_id: "12343205",
+        variant_id: 1,
+        retail_price: 29.99,
+        is_ignored: true,
+        sku: "SKU1234",
+        files: [
+          {
+            type: "default",
+            url: "http://your-domain.com/path/to/thumbnail.png",
+            options: [],
+            filename: "shirt1.png",
+            visible: true
+          }
+        ],
+      })
+      assert_equal(200, response.code)
+      assert_kind_of(PrintfulSdk::Resource::SyncVariant, response.result)
+    end
+  end 
 end

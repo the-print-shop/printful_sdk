@@ -48,6 +48,14 @@ module PrintfulSdk
           body: payload.to_json
         )
       end
+
+      def self.create_sync_variant(sync_product_id, payload)
+        post(
+          Resource::SyncVariant,
+          "/store/products/#{sync_product_id}/variants",
+          body: payload.to_json
+        )
+      end
     end
   end
 end
