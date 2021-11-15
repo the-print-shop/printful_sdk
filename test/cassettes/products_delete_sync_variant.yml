@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: https://api.printful.com/store/variants/2965869092
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Basic <API_KEY>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 15 Nov 2021 13:52:38 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '120'
+      X-Ratelimit-Remaining:
+      - '119'
+      X-Ratelimit-Reset:
+      - '60'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Set-Cookie:
+      - __cf_bm=HwvQTj2BbdhPXf.0FvsRXAiQrlDTnl8rzBY5ilWI7NM-1636984358-0-AawwyPKIaLO8mDxOiucnUy/OGLC/H3gPh2M4Fh0XlOD144CouthwtPwdqZ9ihMTdv915sw7K/YdE50L4PTow5g0=;
+        path=/; expires=Mon, 15-Nov-21 14:22:38 GMT; domain=.printful.com; HttpOnly;
+        Secure; SameSite=None
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6ae8f60faf6a528f-LAX
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"code":200,"result":[],"extra":[]}'
+  recorded_at: Mon, 15 Nov 2021 13:52:38 GMT
+recorded_with: VCR 6.0.0

@@ -107,4 +107,18 @@ class ProductsTest < Minitest::Test
       assert_kind_of(PrintfulSdk::Resource::SyncVariant, response.result)
     end
   end 
+
+  def test_delete_sync_variant
+    VCR.use_cassette("products_delete_sync_variant") do
+      response = PrintfulSdk::Api::Products.delete_sync_variant(2965869092)
+      assert_equal(200, response.code)
+    end
+  end
+
+  def test_delete_sync_product
+    VCR.use_cassette("products_delete_sync_product") do
+      response = PrintfulSdk::Api::Products.delete_sync_product(254727851)
+      assert_equal(200, response.code)
+    end
+  end
 end

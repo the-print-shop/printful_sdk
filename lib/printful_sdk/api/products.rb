@@ -56,6 +56,20 @@ module PrintfulSdk
           body: payload.to_json
         )
       end
+
+      def self.delete_sync_product(sync_product_id)
+        delete(
+          Types::Array,
+          "/store/products/#{sync_product_id}"
+        )
+      end
+
+      def self.delete_sync_variant(sync_variant_id)
+        delete(
+          Types::Array,
+          "/store/variants/#{sync_variant_id}"
+        )
+      end
     end
   end
 end
