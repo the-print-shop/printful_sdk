@@ -20,7 +20,7 @@ class ProductsTest < Minitest::Test
           external_id: "4235234213",
           name: "T-shirt",
           thumbnail: "http://your-domain.com/path/to/thumbnail.png",
-          is_ignored: true
+          is_ignored: true,
         },
         sync_variants: [
           {
@@ -35,11 +35,11 @@ class ProductsTest < Minitest::Test
                 url: "https://i.pinimg.com/originals/eb/9e/3b/eb9e3b7dab09358e7cf13f188f64f9f4.png",
                 options: [],
                 filename: "shirt1.png",
-                visible: true
-              }
+                visible: true,
+              },
             ],
-            options: []
-          }
+            options: [],
+          },
         ]
       )
       assert_equal(200, response.code)
@@ -78,7 +78,7 @@ class ProductsTest < Minitest::Test
   def test_update_sync_variant
     VCR.use_cassette("products_update_sync_variant") do
       response = PrintfulSdk::Api::Products.update_sync_variant(2965869092, {
-        sku: "SK123"
+        sku: "SK123",
       })
       assert_equal(200, response.code)
       assert_kind_of(PrintfulSdk::Resource::SyncVariant, response.result)
@@ -99,14 +99,14 @@ class ProductsTest < Minitest::Test
             url: "http://your-domain.com/path/to/thumbnail.png",
             options: [],
             filename: "shirt1.png",
-            visible: true
-          }
+            visible: true,
+          },
         ],
       })
       assert_equal(200, response.code)
       assert_kind_of(PrintfulSdk::Resource::SyncVariant, response.result)
     end
-  end 
+  end
 
   def test_delete_sync_variant
     VCR.use_cassette("products_delete_sync_variant") do
